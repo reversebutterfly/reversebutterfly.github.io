@@ -1,93 +1,90 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-CN">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Reversebutterfly's research homepage for video foundation models, adversarial robustness, and publisher-side protection."
+      content="吕昭庭，太原理工大学在读研究生，研究方向包括大模型安全、VOS 与 SAM。"
     />
-    <title>reversebutterfly</title>
+    <title>吕昭庭</title>
     <link rel="stylesheet" href="assets/site.css" />
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="reversebutterfly home">
-        <img src="https://github.com/reversebutterfly.png" alt="" />
+      <a class="brand" href="#top" aria-label="吕昭庭主页">
+        <img src="https://github.com/reversebutterfly.png" alt="吕昭庭头像" />
         <span>
-          <strong>reversebutterfly</strong>
-          <small>Research homepage</small>
+          <strong>吕昭庭</strong>
+          <small>太原理工大学在读研究生</small>
         </span>
       </a>
       <nav class="site-nav" aria-label="Primary navigation">
-        <a href="#work">Work</a>
-        <a href="#projects">Projects</a>
-        <a href="#notes">Notes</a>
-        <a href="#contact">Contact</a>
+        <a href="#work">方向</a>
+        <a href="#projects">项目</a>
+        <a href="#notes">简介</a>
+        <a href="#contact">联系</a>
       </nav>
     </header>
 
     <main id="top">
       <section class="hero">
         <div class="hero-copy">
-          <p class="eyebrow">Video Foundation Models · Robustness · Systems</p>
-          <h1>Building publishable methods for robust video intelligence.</h1>
+          <p class="eyebrow">大模型安全 · VOS · SAM</p>
+          <h1>吕昭庭</h1>
           <p class="lede">
-            I work on publisher-side video protection, promptable segmentation, codec-robust
-            adversarial optimization, and evaluation protocols that survive real deployment
-            constraints.
+            太原理工大学在读研究生。研究方向包括大模型安全、视频目标分割
+            （VOS）与 Segment Anything Model（SAM）相关问题。
           </p>
           <div class="hero-actions">
-            <a class="button primary" href="#projects">View Projects</a>
+            <a class="button primary" href="#projects">查看项目</a>
             <a class="button secondary" href="https://github.com/reversebutterfly">GitHub</a>
           </div>
         </div>
 
-        <aside class="profile-panel" aria-label="Profile summary">
-          <img src="https://github.com/reversebutterfly.png" alt="reversebutterfly GitHub avatar" />
+        <aside class="profile-panel" aria-label="个人简介">
+          <img src="https://github.com/reversebutterfly.png" alt="吕昭庭 GitHub 头像" />
           <div>
-            <span>Current focus</span>
-            <strong>Codec-robust publisher-side protection against SAM2-style extraction</strong>
+            <span>Research interests</span>
+            <strong>大模型安全 / VOS / SAM</strong>
           </div>
           <div class="profile-stats">
-            <p><b>3</b><span>datasets</span></p>
-            <p><b>4</b><span>codec settings</span></p>
-            <p><b>6</b><span>baselines</span></p>
+            <p><b>LLM</b><span>Safety</span></p>
+            <p><b>VOS</b><span>Video</span></p>
+            <p><b>SAM</b><span>Vision</span></p>
           </div>
         </aside>
       </section>
 
       <section id="work" class="section">
         <div class="section-heading">
-          <p class="eyebrow">Work</p>
-          <h2>Research direction</h2>
+          <p class="eyebrow">Direction</p>
+          <h2>研究方向</h2>
           <p>
-            The common thread is simple: make methods that still work after the benchmark
-            assumptions are removed. For video protection, that means no deployment-time ground
-            truth, high visual fidelity, codec laundering, and transfer to stronger extractors.
+            我主要关注大模型安全，以及 VOS、SAM 等视觉基础模型相关方向。
           </p>
         </div>
 
         <div class="focus-grid">
           <article>
             <span>01</span>
-            <h3>Publisher-side protection</h3>
-            <p>One-time pre-release transformations for videos that owners still want humans to view.</p>
+            <h3>大模型安全</h3>
+            <p>关注大模型与多模态模型在真实应用中的安全问题。</p>
           </article>
           <article>
             <span>02</span>
-            <h3>Promptable segmentation</h3>
-            <p>Evaluation against SAM2-style video propagation under point, box, and mask prompts.</p>
+            <h3>VOS</h3>
+            <p>关注视频目标分割与视频理解中的鲁棒性问题。</p>
           </article>
           <article>
             <span>03</span>
-            <h3>Codec robustness</h3>
-            <p>Optimization and reporting that include H.264, HEVC, JPEG, and codec survival curves.</p>
+            <h3>SAM</h3>
+            <p>关注 SAM、SAM2 等可提示分割模型的安全与评测。</p>
           </article>
           <article>
             <span>04</span>
-            <h3>Experiment hygiene</h3>
-            <p>Protocol-first research practice: explicit claims, failure checks, and reproducible logs.</p>
+            <h3>Research</h3>
+            <p>面向清晰问题定义、可靠实验协议和可复现实验结果。</p>
           </article>
         </div>
       </section>
@@ -95,23 +92,22 @@
       <section id="projects" class="section projects-section">
         <div class="section-heading compact">
           <p class="eyebrow">Projects</p>
-          <h2>Selected work</h2>
+          <h2>项目</h2>
         </div>
 
         <div class="project-list">
           <article class="project-card featured">
             <div>
               <p class="label">Main project</p>
-              <h3>Codec-Robust SAM2 Video Protection</h3>
+              <h3>SAM / VOS Security</h3>
               <p>
-                Region-restricted, codec-aware feature collapse for publisher-side protection
-                against SAM2 video mask extraction.
+                围绕 SAM、SAM2 与 VOS 的安全问题开展研究。
               </p>
             </div>
             <div class="project-meta">
-              <span>VLM-clean-pseudo protocol</span>
-              <span>DAVIS / YT-VOS / MOSE</span>
-              <span>H.264 / HEVC stress</span>
+              <span>大模型安全</span>
+              <span>VOS</span>
+              <span>SAM</span>
             </div>
             <a href="https://github.com/reversebutterfly/lv6.9">Repository</a>
           </article>
@@ -119,10 +115,9 @@
           <article class="project-card">
             <div>
               <p class="label">Evaluation</p>
-              <h3>Codec and transfer benchmark</h3>
+              <h3>Research notes</h3>
               <p>
-                Cross-dataset and cross-model evaluation for protected video tracks, including
-                realistic compression and stronger SAM2 extractors.
+                记录实验代码、研究文档和阶段性结果。
               </p>
             </div>
             <a href="https://github.com/reversebutterfly?tab=repositories">More repositories</a>
@@ -132,26 +127,25 @@
 
       <section id="notes" class="section">
         <div class="section-heading">
-          <p class="eyebrow">Notes</p>
-          <h2>What I optimize for</h2>
+          <p class="eyebrow">Profile</p>
+          <h2>简介</h2>
           <p>
-            Positive method papers, clear threat models, honest baselines, and results that match
-            the practical deployment story.
+            吕昭庭，太原理工大学在读研究生。研究兴趣包括大模型安全、VOS 与 SAM。
           </p>
         </div>
 
         <div class="note-grid">
           <article>
-            <h3>Method first</h3>
-            <p>When correctness breaks, redesign the method path instead of preserving sunk cost.</p>
+            <h3>大模型安全</h3>
+            <p>关注模型在复杂输入和真实应用中的可靠性与安全性。</p>
           </article>
           <article>
-            <h3>No proxy downgrade</h3>
-            <p>Implementation should match the claimed component, with proxy gaps made explicit.</p>
+            <h3>VOS</h3>
+            <p>关注视频目标分割中的跟踪、传播和鲁棒评测。</p>
           </article>
           <article>
-            <h3>Claim discipline</h3>
-            <p>Results are used to support bounded claims, not to decorate a predetermined story.</p>
+            <h3>SAM</h3>
+            <p>关注可提示视觉分割模型的安全边界。</p>
           </article>
         </div>
       </section>
@@ -159,9 +153,9 @@
       <section id="contact" class="section contact-section">
         <div>
           <p class="eyebrow">Contact</p>
-          <h2>Find me on GitHub</h2>
+          <h2>联系</h2>
           <p>
-            The fastest public entry point is the GitHub profile and repository list.
+            可通过 GitHub 主页查看公开项目。
           </p>
         </div>
         <a class="button primary" href="https://github.com/reversebutterfly">github.com/reversebutterfly</a>
@@ -169,7 +163,7 @@
     </main>
 
     <footer class="site-footer">
-      <span>reversebutterfly.github.io</span>
+      <span>吕昭庭</span>
       <button type="button" data-copy>Copy URL</button>
     </footer>
 
